@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Angelo Paysagiste</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-white text-gray-900 font-sans">
+        <!-- NAVBAR -->
+        <header class="bg-white shadow-md">
+            <div
+                class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6"
+            >
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2">
+                    <img
+                        src="assets/logo/angelo-paysagiste-logo-sans-ecriture.png"
+                        alt="Logo Angelo Paysagiste"
+                        class="h-10 w-auto"
+                    />
+                    <span class="text-xl font-bold uppercase">
+                        <span class="text-[#005728]">Angelo</span>
+                        <span class="text-[#4CAF50]">Paysagiste</span>
+                    </span>
+                </a>
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a
+                        href="#"
+                        class="text-gray-700 hover:text-[#4CAF50] transition"
+                        >Accueil</a
+                    >
+                    <a
+                        href="#"
+                        class="text-gray-700 hover:text-[#4CAF50] transition"
+                        >Services</a
+                    >
+                    <a
+                        href="#"
+                        class="text-gray-700 hover:text-[#4CAF50] transition"
+                        >Réalisations</a
+                    >
+                    <a
+                        href="contact.html"
+                        class="bg-[#4CAF50] text-white px-5 py-2 rounded-full hover:bg-green-600 transition"
+                        >Contact</a
+                    >
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section
+            class="relative h-[calc(100vh-4.5rem)] pt-20 bg-cover bg-center flex items-center justify-center text-center text-white"
+            style="background-image: url('assets/img/hero-bg.png')"
+        >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <!-- overlay sombre -->
+            <div class="relative z-10 px-4">
+                <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">
+                    Donnez vie à vos extérieurs.
+                </h1>
+                <p class="text-xl mb-10 drop-shadow">
+                    Aménagement, entretien et création de jardins sur Marseille
+                    et alentours.
+                </p>
+                <div class="flex justify-center space-x-4 flex-wrap">
+                    <!-- CTA 1 rempli -->
+                    <a
+                        href="#contact"
+                        class="bg-[#4CAF50] text-white font-semibold py-3 px-6 rounded-full hover:bg-green-600 transition duration-300"
+                    >
+                        Demander un devis
+                    </a>
+                    <!-- CTA 2 outline -->
+                    <a
+                        href="#services"
+                        class="border-2 border-[#4CAF50] text-[#4CAF50] font-semibold py-3 px-6 rounded-full hover:bg-[#4CAF50] hover:text-white transition duration-300"
+                    >
+                        Voir nos services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div
+                class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
+            >
+                <!-- Image -->
+                <div class="w-full md:w-1/2" data-aos="fade-right">
+                    <img
+                        src="assets/img/angelo_portrait-v2.jpg"
+                        alt="Angelo Cavailles"
+                        class="rounded-lg shadow-lg w-full object-cover max-h-[500px]"
+                    />
+                </div>
+
+                <!-- Texte -->
+                <div class="w-full md:w-1/2" data-aos="fade-left">
+                    <h2
+                        class="text-3xl font-bold text-[#005728] uppercase mb-10"
+                    >
+                        Angelo Cavailles
+                    </h2>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Je m’appelle Angelo Cavailles, paysagiste à Marseille
+                        depuis plus de 15 ans. J’ai choisi ce métier par passion
+                        pour la nature et le travail bien fait. J’accompagne mes
+                        clients – particuliers comme professionnels – dans la
+                        création, l’entretien et l’aménagement de leurs jardins
+                        et espaces verts. Chaque projet est unique, et j’y
+                        apporte toujours une attention particulière. Mon
+                        objectif ? Vous offrir un extérieur qui vous ressemble,
+                        avec des conseils personnalisés, un travail soigné et
+                        des résultats durables. Je suis fier d’exercer en tant
+                        qu’artisan indépendant, avec une approche humaine,
+                        réactive et de confiance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200, // animation plus lente
+                offset: 200, // démarre plus bas
+                easing: "ease-in-out", // effet smooth
+                once: true, // ne se rejoue pas
+            });
+        </script>
+    </body>
+</html>

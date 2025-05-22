@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Angelo Paysagiste</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans p-4">
+  <h1 class="text-3xl font-bold mb-6 text-center">Contactez-nous</h1>
+  <form action="php/contact.php" method="POST" class="max-w-xl mx-auto space-y-4">
+    <input type="text" name="nom" placeholder="Votre nom" class="w-full border p-2 rounded" required />
+    <input type="email" name="email" placeholder="Votre email" class="w-full border p-2 rounded" required />
+    <textarea name="message" placeholder="Votre message" class="w-full border p-2 rounded" rows="5" required></textarea>
+    <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">Envoyer</button>
+  </form>
+</body>
+</html>

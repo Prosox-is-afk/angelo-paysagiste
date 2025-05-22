@@ -9,10 +9,18 @@
             href="https://unpkg.com/aos@2.3.4/dist/aos.css"
             rel="stylesheet"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body class="bg-white text-gray-900 font-sans">
-        <!-- NAVBAR -->
-        <header class="bg-white shadow-md">
+        <!-- HEADER -->
+        <header
+            class="bg-white shadow-md"
+            data-aos="fade-down"
+            data-aos-duration="800"
+        >
             <div
                 class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6"
             >
@@ -21,7 +29,7 @@
                     <img
                         src="assets/logo/angelo-paysagiste-logo-sans-ecriture.png"
                         alt="Logo Angelo Paysagiste"
-                        class="h-10 w-auto"
+                        class="h-10 w-auto rounded"
                     />
                     <span class="text-xl font-bold uppercase">
                         <span class="text-[#005728]">Angelo</span>
@@ -36,20 +44,21 @@
                         >Accueil</a
                     >
                     <a
-                        href="#"
+                        href="#services"
                         class="text-gray-700 hover:text-[#4CAF50] transition"
                         >Services</a
                     >
                     <a
-                        href="#"
+                        href="realisations.html"
                         class="text-gray-700 hover:text-[#4CAF50] transition"
                         >Réalisations</a
                     >
                     <a
                         href="contact.html"
-                        class="bg-[#4CAF50] text-white px-5 py-2 rounded-full hover:bg-green-600 transition"
-                        >Contact</a
+                        class="bg-[#4CAF50] text-white px-5 py-3 rounded-full hover:bg-green-600 transition flex items-center justify-center leading-none font-semibold"
                     >
+                        Contact
+                    </a>
                 </nav>
             </div>
         </header>
@@ -62,10 +71,18 @@
             <div class="absolute inset-0 bg-black/50"></div>
             <!-- overlay sombre -->
             <div class="relative z-10 px-4">
-                <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">
+                <h1
+                    class="text-5xl font-extrabold mb-4 drop-shadow-lg"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
                     Donnez vie à vos extérieurs.
                 </h1>
-                <p class="text-xl mb-10 drop-shadow">
+                <p
+                    class="text-xl mb-10 drop-shadow"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                >
                     Aménagement, entretien et création de jardins sur Marseille
                     et alentours.
                 </p>
@@ -73,16 +90,21 @@
                     <!-- CTA 1 rempli -->
                     <a
                         href="#contact"
-                        class="bg-[#4CAF50] text-white font-semibold py-3 px-6 rounded-full hover:bg-green-600 transition duration-300"
+                        class="bg-[#4CAF50] text-white font-semibold py-4 px-6 rounded-full hover:bg-green-600 transition duration-300 leading-none flex items-center justify-center"
+                        data-aos="zoom-in"
+                        data-aos-delay="600"
                     >
                         Demander un devis
                     </a>
-                    <!-- CTA 2 outline -->
+
+                    <!-- CTA 2 -->
                     <a
                         href="#services"
-                        class="border-2 border-[#4CAF50] text-[#4CAF50] font-semibold py-3 px-6 rounded-full hover:bg-[#4CAF50] hover:text-white transition duration-300"
+                        class="border-2 border-[#4CAF50] text-[#4CAF50] font-semibold py-4 px-6 rounded-full hover:bg-[#4CAF50] hover:text-white transition duration-300 leading-none flex items-center justify-center"
+                        data-aos="zoom-in"
+                        data-aos-delay="800"
                     >
-                        Voir nos services
+                        Voir mes services
                     </a>
                 </div>
             </div>
@@ -90,13 +112,13 @@
 
         <section class="py-20 bg-white">
             <div
-                class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
+                class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10 md:gap-24"
             >
                 <!-- Image -->
                 <div class="w-full md:w-1/2" data-aos="fade-right">
                     <img
                         src="assets/img/angelo_portrait-v2.jpg"
-                        alt="Angelo Cavailles"
+                        alt="Photo de Angelo Cavailles"
                         class="rounded-lg shadow-lg w-full object-cover max-h-[500px]"
                     />
                 </div>
@@ -125,6 +147,510 @@
                 </div>
             </div>
         </section>
+
+        <section class="bg-white py-20">
+            <h2
+                class="text-3xl font-bold text-center text-[#005728] uppercase mb-12"
+            >
+                Mes services
+            </h2>
+
+            <div
+                class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
+            >
+                <!-- Carte Service -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                >
+                    <img
+                        src="assets/services/entretien-espace-vert.png"
+                        alt="Entretien espaces verts"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Entretien espaces verts
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <img
+                        src="assets/services/elagage.png"
+                        alt="Élagage"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Élagage
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    <img
+                        src="assets/services/jardin.png"
+                        alt="Création de jardin"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Création de jardin
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
+                    <img
+                        src="assets/services/gazon.png"
+                        alt="Pose de gazon"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Pose de gazon
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                >
+                    <img
+                        src="assets/services/arrosage-auto.png"
+                        alt="Arrosage automatique"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Arrosage automatique
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                >
+                    <img
+                        src="assets/services/cloture.png"
+                        alt="Clôture & Maçonnerie"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Clôture & Maçonnerie
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                >
+                    <img
+                        src="assets/services/evacuation.png"
+                        alt="Évacuation des végétaux"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Évacuation des végétaux
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                >
+                    <img
+                        src="assets/services/hauteur.png"
+                        alt="Travail en hauteur"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Travail en hauteur
+                        </h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden"
+                    data-aos="fade-up"
+                    data-aos-delay="800"
+                >
+                    <img
+                        src="assets/services/conseils.png"
+                        alt="Conseils personnalisés"
+                        class="w-full h-72 object-cover"
+                    />
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-[#005728]">
+                            Conseils personnalisés
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="flex justify-center space-x-4 flex-wrap">
+            <!-- CTA 1 rempli -->
+            <a
+                href="#contact"
+                class="bg-[#4CAF50] text-white font-semibold py-4 px-6 rounded-full hover:bg-green-600 transition duration-300 leading-none flex items-center justify-center"
+                data-aos="fade-right"
+            >
+                Devis gratuit
+            </a>
+
+            <a
+                href="#services"
+                class="border-2 border-[#4CAF50] text-[#4CAF50] font-semibold py-4 px-6 rounded-full hover:bg-[#4CAF50] hover:text-white transition duration-300 leading-none flex items-center justify-center"
+                data-aos="fade-left"
+            >
+                Voir plus
+            </a>
+        </div>
+
+        <section class="py-20 bg-white">
+            <h2
+                class="text-3xl font-bold text-center text-[#005728] uppercase mb-12"
+            >
+                Mes dernières réalisations
+            </h2>
+
+            <!-- Projet 1 -->
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto px-6 mb-16"
+            >
+                <!-- Avant -->
+                <div class="w-full md:w-1/2" data-aos="fade-right">
+                    <img
+                        src="assets/realisations/gazon-avant-1.jpg"
+                        alt="Avant"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                </div>
+                <!-- Après -->
+                <div class="w-full md:w-1/2" data-aos="fade-left">
+                    <img
+                        src="assets/realisations/gazon-apres-1.jpg"
+                        alt="Après"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                </div>
+            </div>
+
+            <!-- Projet 2 (2 avant + 2 après) -->
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto px-6 mb-16"
+            >
+                <!-- Avant x2 -->
+                <div
+                    class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4"
+                    data-aos="fade-right"
+                >
+                    <img
+                        src="assets/realisations/piscine-avant-1.jpg"
+                        alt="Avant 1"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                    <img
+                        src="assets/realisations/piscine-avant-2.jpg"
+                        alt="Avant 2"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                </div>
+                <!-- Après x2 -->
+                <div
+                    class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4"
+                    data-aos="fade-left"
+                >
+                    <img
+                        src="assets/realisations/piscine-apres-1.jpg"
+                        alt="Après 1"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                    <img
+                        src="assets/realisations/piscine-apres-2.jpg"
+                        alt="Après 2"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                </div>
+            </div>
+
+            <!-- Projet 3 (simple) -->
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto px-6 mb-16"
+            >
+                <!-- Avant -->
+                <div class="w-full md:w-1/2" data-aos="fade-right">
+                    <img
+                        src="assets/realisations/terrain-de-boule-avant.jpg"
+                        alt="Avant"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                </div>
+                <!-- Après -->
+                <div class="w-full md:w-1/2" data-aos="fade-left">
+                    <img
+                        src="assets/realisations/terrain-de-boule-apres.jpg"
+                        alt="Après"
+                        class="rounded-lg shadow w-full h-[320px] object-cover"
+                    />
+                </div>
+            </div>
+
+            <!-- Projet 4 (avant / pendant / après) -->
+            <div class="max-w-6xl mx-auto px-6 mb-16">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center text-center"
+                >
+                    <div data-aos="fade-up">
+                        <img
+                            src="assets/realisations/gazon_avant.jpg"
+                            alt="Avant"
+                            class="rounded-lg shadow w-full h-[320px] object-cover"
+                        />
+                        <p
+                            class="mt-2 font-semibold text-[#005728] uppercase text-sm"
+                        >
+                            Avant
+                        </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="150">
+                        <img
+                            src="assets/realisations/gazon_pendant.jpg"
+                            alt="Pendant"
+                            class="rounded-lg shadow w-full h-[320px] object-cover"
+                        />
+                        <p
+                            class="mt-2 font-semibold text-[#005728] uppercase text-sm"
+                        >
+                            Pendant
+                        </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <img
+                            src="assets/realisations/gazon_apres2.jpg"
+                            alt="Après"
+                            class="rounded-lg shadow w-full h-[320px] object-cover"
+                        />
+                        <p
+                            class="mt-2 font-semibold text-[#005728] uppercase text-sm"
+                        >
+                            Après
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-12" data-aos="zoom-in">
+                <a
+                    href="realisations.html"
+                    class="inline-block bg-[#4CAF50] text-white px-8 py-3 rounded-full hover:bg-green-600 transition font-semibold"
+                >
+                    Voir toutes les réalisations
+                </a>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <h2
+                class="text-3xl font-bold text-center text-[#005728] uppercase mb-12"
+            >
+                Ils m'ont fait confiance
+            </h2>
+
+            <div class="text-center mb-10" data-aos="fade-in">
+                <div
+                    class="inline-flex items-center gap-2 bg-white shadow px-4 py-2 rounded-full text-sm text-gray-700"
+                >
+                    <img
+                        src="assets/img/google-logo.png"
+                        alt="Google"
+                        class="w-5 h-5"
+                    />
+                    <span
+                        ><span class="font-semibold text-yellow-500">5,0</span>
+                        sur Google - Avis vérifiés</span
+                    >
+                </div>
+            </div>
+
+            <div
+                class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+                <!-- Testimonial 1 -->
+                <div
+                    class="bg-white rounded-xl shadow p-6 text-center"
+                    data-aos="fade-up"
+                >
+                    <img
+                        src="assets/img/user-profile-icon-free-vector.jpg"
+                        alt="Client 1"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h3 class="text-[#005728] font-bold text-lg">Aline P.</h3>
+                    <p class="text-sm text-gray-700 mt-2 mb-4">
+                        “Prestation sérieuse et efficace. Angelo fait tout pour
+                        nous satisfaire.”
+                    </p>
+                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                    class="bg-white rounded-xl shadow p-6 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <img
+                        src="assets/img/user-profile-icon-free-vector.jpg"
+                        alt="Client 2"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h3 class="text-[#005728] font-bold text-lg">
+                        Jean-Christophe L.
+                    </h3>
+                    <p class="text-sm text-gray-700 mt-2 mb-4">
+                        “Super sérieux et très professionnel avec 15 ans
+                        d'expérience 👍 Je recommande vivement.”
+                    </p>
+                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                    class="bg-white rounded-xl shadow p-6 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    <img
+                        src="assets/img/user-profile-icon-free-vector.jpg"
+                        alt="Client 3"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+                    />
+                    <h3 class="text-[#005728] font-bold text-lg">
+                        Christian J.
+                    </h3>
+                    <p class="text-sm text-gray-700 mt-2 mb-4">
+                        “Connaît et aime son métier. Très dévoué et appliqué
+                        dans son travail. Paysagiste à recommander.”
+                    </p>
+                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#4CAF50] text-white py-20">
+            <div class="text-center px-6 max-w-3xl mx-auto" data-aos="zoom-in">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                    Prêt à transformer votre jardin ?
+                </h2>
+                <p class="text-lg mb-10">
+                    Contactez-moi dès aujourd’hui pour discuter de votre projet
+                    et obtenir un devis gratuit.
+                </p>
+                <a
+                    href="contact.html"
+                    class="bg-white text-[#005728] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition duration-300 inline-block"
+                >
+                    Demander un devis gratuit
+                </a>
+            </div>
+        </section>
+
+        <footer class="bg-[#333] text-white pt-12 pb-6">
+            <div
+                class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+            >
+                <!-- Logo + Présentation -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img
+                            src="assets/logo/angelo-paysagiste-logo-sans-ecriture.png"
+                            alt="Logo"
+                            class="w-10 h-10 rounded-full"
+                        />
+                        <span class="font-bold text-lg uppercase tracking-wider"
+                            >Angelo Paysagiste</span
+                        >
+                    </div>
+                    <p class="text-sm">
+                        Création et entretien d'espaces verts à Marseille et
+                        alentours.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-semibold uppercase text-sm mb-4">
+                        Navigation
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Accueil</a></li>
+                        <li>
+                            <a href="#services" class="hover:underline"
+                                >Services</a
+                            >
+                        </li>
+                        <li>
+                            <a href="realisations.html" class="hover:underline"
+                                >Réalisations</a
+                            >
+                        </li>
+                        <li>
+                            <a href="contact.html" class="hover:underline"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Infos légales -->
+                <div>
+                    <h4 class="font-semibold uppercase text-sm mb-4">
+                        Infos légales
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="mentions.html" class="hover:underline"
+                                >Mentions légales</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html" class="hover:underline">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Crédit bas de page -->
+            <div class="text-center text-sm text-white/80 mt-10 px-6">
+                <p>© 2025 – Angelo Paysagiste. Tous droits réservés.</p>
+            </div>
+        </footer>
 
         <script src="js/main.js"></script>
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

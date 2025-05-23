@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mes services - Angelo Paysagiste | Jardinier à Marseille</title>
+
+        <meta
+            name="description"
+            content="Découvrez les services de Angelo Paysagiste à Marseille : entretien de jardin, création d'espaces verts, élagage, arrosage automatique, maçonnerie paysagère et plus encore."
+        />
+        <meta
+            name="keywords"
+            content="services paysagiste Marseille, jardinier Marseille, entretien jardin Marseille, création jardin Marseille, élagage Marseille, Angelo Cavailles"
+        />
+        <meta name="author" content="Angelo Cavailles" />
+
+        <!-- Open Graph pour le partage -->
+        <meta
+            property="og:title"
+            content="Services - Angelo Paysagiste | Jardinier Marseille"
+        />
+        <meta
+            property="og:description"
+            content="Aménagement extérieur et entretien de jardin à Marseille. Services pour particuliers et professionnels avec devis gratuit."
+        />
+        <meta
+            property="og:image"
+            content="https://angelopaysagiste.fr/assets/img/hero-bg.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://angelopaysagiste.fr/services.html"
+        />
+
+        <!-- Canonical pour éviter le duplicate -->
+        <link
+            rel="canonical"
+            href="https://angelopaysagiste.fr/services.html"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="assets/logo/angelo-paysagiste-logo-rond.png"
+        />
+
+        <!-- Tailwind + AOS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <!-- Scroll smooth + scrollbar masquée -->
+        <style>
+            html,
+            body {
+                scrollbar-width: none;
+                scroll-behavior: smooth;
+            }
+
+            html::-webkit-scrollbar,
+            body::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+
+        <!-- Données structurées spécifiques à cette page -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "serviceType": "Aménagement paysager",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "Angelo Paysagiste",
+                    "image": "https://angelopaysagiste.fr/assets/logo/angelo-paysagiste-logo-sans-ecriture.png",
+                    "email": "angelopaysagistepro@gmail.com",
+                    "telephone": "+33 6 25 15 06 85",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Marseille",
+                        "addressCountry": "FR"
+                    },
+                    "url": "https://angelopaysagiste.fr/"
+                },
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Marseille et environs"
+                },
+                "description": "Services de jardinage, entretien de jardin, élagage, pose de gazon et arrosage automatique à Marseille et alentours."
+            }
+        </script>
+    </head>
+
+    <body class="bg-white text-gray-900 font-sans">
+        <!-- HEADER -->
+        <header
+            class="bg-white shadow-md"
+            data-aos="fade-down"
+            data-aos-duration="800"
+        >
+            <div
+                class="max-w-8xl mx-auto flex justify-between items-center py-4 px-6"
+            >
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img
+                        src="assets/logo/angelo-paysagiste-logo-sans-ecriture.png"
+                        alt="Logo de Angelo Cavailles, paysagiste et jardinnier à Marseille"
+                        class="h-10 w-auto rounded"
+                    />
+                    <span class="text-xl font-bold uppercase">
+                        <span class="text-[#005728]">Angelo</span>
+                        <span class="text-[#4CAF50]">Paysagiste</span>
+                    </span>
+                </a>
+
+                <!-- Bouton Burger -->
+                <button
+                    id="burgerBtn"
+                    class="md:hidden text-[#005728] focus:outline-none"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </button>
+
+                <!-- Navigation Desktop -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="realisations.html" class="nav-link"
+                        >Réalisations</a
+                    >
+                    <a href="contact.html" class="nav-link contact-btn-desktop">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MENU MOBILE -->
+        <div
+            id="mobileMenu"
+            class="fixed inset-0 z-50 bg-white/95 backdrop-blur-sm flex-col items-center justify-center text-[#005728] text-xl font-semibold gap-6 transition-all duration-300 transform translate-y-full md:hidden flex"
+        >
+            <nav class="flex flex-col items-center gap-6">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button
+                id="closeMenu"
+                class="mt-10 text-sm text-gray-500 hover:underline"
+            >
+                Fermer
+            </button>
+        </div>
+
+        <main class="py-20">
+            <section class="max-w-6xl mx-auto px-6">
+                <h1
+                    class="text-4xl font-bold text-[#005728] text-center uppercase mb-16"
+                    data-aos="fade-down"
+                >
+                    Mes services en détail
+                </h1>
+
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+                >
+                    <!-- Carte service -->
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                    >
+                        <img
+                            src="assets/services/entretien-espace-vert.png"
+                            alt="Entretien d'espaces verts par Angelo Paysagiste"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Entretien espaces verts
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Tonte de pelouse, taille de haies,
+                                débroussaillage... nous assurons un entretien
+                                régulier et soigné de vos espaces verts pour un
+                                jardin propre toute l'année.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <img
+                            src="assets/services/elagage.png"
+                            alt="Élagage d'arbres par Angelo Paysagiste à Marseille"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Élagage
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Élagage d’arbres et arbustes pour garantir leur
+                                bonne santé, la sécurité de votre terrain et la
+                                clarté de vos espaces extérieurs.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <img
+                            src="assets/services/jardin.png"
+                            alt="Création de jardin paysager à Marseille par Angelo Paysagiste"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Création de jardin
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Conception sur-mesure de jardins paysagers :
+                                massifs, allées, gazon, plantations. Créons
+                                ensemble un espace harmonieux et fonctionnel.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <img
+                            src="assets/services/gazon.png"
+                            alt="Pose de gazon synthétique et naturel par Angelo Paysagiste sur Marseille"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Pose de gazon
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Installation de gazon en rouleau ou semi naturel
+                                pour un rendu immédiat, verdoyant et durable.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        <img
+                            src="assets/services/arrosage-auto.png"
+                            alt="Mise en place d'un arrosage automatique par Angelo Paysagiste"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Arrosage automatique
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Installation de systèmes d'arrosage enterrés
+                                intelligents pour un jardin bien irrigué sans
+                                effort et avec économie d'eau.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                    >
+                        <img
+                            src="assets/services/cloture.png"
+                            alt="Clôture & Maçonnerie fabriqué par Angelo Paysagiste à Marseille"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Clôture & Maçonnerie
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Création de murets, terrasses, dalles ou
+                                clôtures pour structurer et sécuriser vos
+                                espaces extérieurs.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                    >
+                        <img
+                            src="assets/services/evacuation.png"
+                            alt="Service d'évacuation des végétaux par Angelo Paysagiste"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Évacuation des végétaux
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Enlèvement et traitement des déchets verts :
+                                branches, feuillage, tonte... site propre
+                                garanti après chaque intervention.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="700"
+                    >
+                        <img
+                            src="assets/services/hauteur.png"
+                            alt="photo de travail en hauteur par angelo paysagiste grâce à un camion nacelle"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Travail en hauteur
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Interventions sécurisées pour la taille d’arbres
+                                de grande hauteur ou accès difficiles. Matériel
+                                professionnel inclus.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-xl overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="800"
+                    >
+                        <img
+                            src="assets/services/conseils.png"
+                            alt="Bénéficiez de conseils personnalisés par Angelo Paysagiste"
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold text-[#005728] mb-3">
+                                Conseils personnalisés
+                            </h2>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Diagnostic, choix de plantes, idées
+                                d’aménagement... Angelo vous guide avec
+                                expertise selon votre budget et vos envies.
+                            </p>
+                            <a
+                                href="contact.html"
+                                class="inline-block mt-4 text-[#4CAF50] font-semibold hover:underline"
+                                >Demander un devis</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- CTA Final -->
+        <section class="py-20 bg-[#4CAF50] text-white mt-20">
+            <div class="text-center px-6 max-w-3xl mx-auto" data-aos="zoom-in">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                    Besoin d’un paysagiste à Marseille ?
+                </h2>
+                <p class="text-lg mb-10">
+                    Prenez contact avec moi pour bénéficier d’un devis gratuit
+                    et personnalisé. J’interviens rapidement dans toute la
+                    région.
+                </p>
+                <a
+                    href="contact.html"
+                    class="bg-white text-[#005728] font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition duration-300 inline-block"
+                    aria-label="Demander un devis gratuit à Angelo Paysagiste"
+                >
+                    Contactez-moi
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#333] text-white pt-12 pb-6">
+            <div
+                class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8"
+            >
+                <!-- Logo + Présentation -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img
+                            src="assets/logo/angelo-paysagiste-logo-sans-ecriture.png"
+                            alt="Logo de Angelo Cavailles, paysagiste et jardinier à Marseille"
+                            class="w-10 h-10 rounded-full"
+                        />
+                        <span
+                            class="font-bold text-lg uppercase tracking-wider"
+                        >
+                            Angelo Paysagiste
+                        </span>
+                    </div>
+                    <p class="text-sm">
+                        Création et entretien d'espaces verts à Marseille et
+                        alentours.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-semibold uppercase text-sm mb-4">
+                        Navigation
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="index.html" class="hover:underline"
+                                >Accueil</a
+                            >
+                        </li>
+                        <li>
+                            <a href="services.html" class="hover:underline"
+                                >Services</a
+                            >
+                        </li>
+                        <li>
+                            <a href="realisations.html" class="hover:underline"
+                                >Réalisations</a
+                            >
+                        </li>
+                        <li>
+                            <a href="contact.html" class="hover:underline"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Infos légales -->
+                <div>
+                    <h4 class="font-semibold uppercase text-sm mb-4">
+                        Infos légales
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="mentions.html" class="hover:underline"
+                                >Mentions légales</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html" class="hover:underline">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact express -->
+                <div>
+                    <h4 class="font-semibold uppercase text-sm mb-4">
+                        Coordonnées
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="tel:+33625150685" class="hover:underline"
+                                >06 25 15 06 85</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="mailto:angelopaysagistepro@gmail.com"
+                                class="hover:underline"
+                                >angelopaysagistepro@gmail.com</a
+                            >
+                        </li>
+                        <li>
+                            <span class="text-white/80">Marseille (13)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Zones desservies -->
+                <div>
+                    <h4 class="font-semibold uppercase text-sm mb-4">
+                        Villes voisines
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a
+                                href="paysagiste-aix-en-provence.html"
+                                class="hover:underline"
+                                >Aix en Provence</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="paysagiste-allauch.html"
+                                class="hover:underline"
+                                >Allauch</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="paysagiste-aubagne.html"
+                                class="hover:underline"
+                                >Aubagne</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="paysagiste-cassis.html"
+                                class="hover:underline"
+                                >Cassis</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="paysagiste-plan-de-cuques.html"
+                                class="hover:underline"
+                                >Plan-de-Cuques</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Crédit bas de page -->
+            <div class="text-center text-sm text-white/80 mt-10 px-6">
+                <p>© 2025 – Angelo Paysagiste. Tous droits réservés.</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+                offset: 200,
+                easing: "ease-in-out",
+                once: true,
+            });
+        </script>
+    </body>
+</html>

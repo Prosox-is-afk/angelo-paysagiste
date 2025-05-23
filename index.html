@@ -13,6 +13,19 @@
             href="https://unpkg.com/aos@2.3.4/dist/aos.css"
             rel="stylesheet"
         />
+        <style>
+            /* Masque uniquement la scrollbar */
+            html,
+            body {
+                scrollbar-width: none; /* Firefox */
+                scroll-behavior: smooth;
+            }
+
+            html::-webkit-scrollbar,
+            body::-webkit-scrollbar {
+                display: none; /* Chrome, Safari */
+            }
+        </style>
     </head>
     <body class="bg-white text-gray-900 font-sans">
         <!-- HEADER -->
@@ -22,10 +35,10 @@
             data-aos-duration="800"
         >
             <div
-                class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6"
+                class="max-w-8xl mx-auto flex justify-between items-center py-4 px-6"
             >
                 <!-- Logo -->
-                <a href="#" class="flex items-center space-x-2">
+                <a href="index.html" class="flex items-center space-x-2">
                     <img
                         src="assets/logo/angelo-paysagiste-logo-sans-ecriture.png"
                         alt="Logo Angelo Paysagiste"
@@ -36,32 +49,60 @@
                         <span class="text-[#4CAF50]">Paysagiste</span>
                     </span>
                 </a>
-                <!-- Navigation -->
+
+                <!-- Bouton Burger -->
+                <button
+                    id="burgerBtn"
+                    class="md:hidden text-[#005728] focus:outline-none"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </button>
+
+                <!-- Navigation Desktop -->
                 <nav class="hidden md:flex items-center space-x-6">
-                    <a
-                        href="#"
-                        class="text-gray-700 hover:text-[#4CAF50] transition"
-                        >Accueil</a
-                    >
-                    <a
-                        href="#services"
-                        class="text-gray-700 hover:text-[#4CAF50] transition"
-                        >Services</a
-                    >
-                    <a
-                        href="realisations.html"
-                        class="text-gray-700 hover:text-[#4CAF50] transition"
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="realisations.html" class="nav-link"
                         >Réalisations</a
                     >
-                    <a
-                        href="contact.html"
-                        class="bg-[#4CAF50] text-white px-5 py-3 rounded-full hover:bg-green-600 transition flex items-center justify-center leading-none font-semibold"
-                    >
+                    <a href="contact.html" class="nav-link contact-btn-desktop">
                         Contact
                     </a>
                 </nav>
             </div>
         </header>
+
+        <!-- MENU MOBILE -->
+        <div
+            id="mobileMenu"
+            class="fixed inset-0 z-50 bg-white/95 backdrop-blur-sm flex-col items-center justify-center text-[#005728] text-xl font-semibold gap-6 transition-all duration-300 transform translate-y-full md:hidden flex"
+        >
+            <nav class="flex flex-col items-center gap-6">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button
+                id="closeMenu"
+                class="mt-10 text-sm text-gray-500 hover:underline"
+            >
+                Fermer
+            </button>
+        </div>
 
         <!-- HERO -->
         <section

@@ -1,46 +1,56 @@
-const services = [
-    {
-        title: "Entretien espaces verts",
-        img: "assets/services/entretien-espace-vert.png",
-    },
-    { title: "Élagage", img: "assets/services/elagage.png" },
-    { title: "Création de jardin", img: "assets/services/jardin.png" },
-    { title: "Pose de gazon", img: "assets/services/gazon.png" },
-    { title: "Arrosage automatique", img: "assets/services/arrosage-auto.png" },
-    { title: "Clôture & Maçonnerie", img: "assets/services/cloture.png" },
-    { title: "Évacuation des végétaux", img: "assets/services/evacuation.png" },
-    { title: "Travail en hauteur", img: "assets/services/hauteur.png" },
-    { title: "Conseils personnalisés", img: "assets/services/conseils.png" },
-];
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerBtn = document.getElementById("burgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeMenu = document.getElementById("closeMenu");
 
-const container = document.getElementById("carousel-marquee");
-const template = document.getElementById("service-card-template");
+    burgerBtn?.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-y-full");
+    });
 
-function addServices(repeat = 2) {
-    for (let r = 0; r < repeat; r++) {
-        services.forEach((service) => {
-            const clone = template.content.cloneNode(true);
-            const img = clone.querySelector("img");
-            const p = clone.querySelector("p");
-            img.src = service.img;
-            img.alt = service.title;
-            p.textContent = service.title;
-            container.appendChild(clone);
-        });
-    }
-}
+    closeMenu?.addEventListener("click", () => {
+        mobileMenu.classList.add("translate-y-full");
+    });
+});
 
-addServices(3); // 2x pour boucle infinie
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPage =
+        window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-link");
 
-let scrollSpeed = 2.5;
+    navLinks.forEach((link) => {
+        const href = link.getAttribute("href");
+        const isDesktopBtn = link.classList.contains("contact-btn-desktop");
 
-function animate() {
-    container.scrollLeft += scrollSpeed;
-    console.log("scrolling", container.scrollLeft);
-    if (container.scrollLeft >= container.scrollWidth / 2) {
-        container.scrollLeft = 0;
-    }
-    requestAnimationFrame(animate);
-}
-
-animate();
+        if (
+            href === currentPage ||
+            (href === "index.html" && currentPage === "")
+        ) {
+            if (href === "contact.html" && isDesktopBtn) {
+                // Contact bouton desktop actif
+                link.classList.add("bg-green-600", "text-white");
+            } else {
+                link.classList.add("text-[#4CAF50]", "font-semibold");
+            }
+        } else {
+            if (href === "contact.html" && isDesktopBtn) {
+                // Contact bouton desktop inactif
+                link.classList.add(
+                    "bg-[#4CAF50]",
+                    "text-white",
+                    "hover:bg-green-600",
+                    "transition",
+                    "px-5",
+                    "py-3",
+                    "rounded-full",
+                    "font-semibold"
+                );
+            } else {
+                link.classList.add(
+                    "text-gray-700",
+                    "hover:text-[#4CAF50]",
+                    "transition"
+                );
+            }
+        }
+    });
+});

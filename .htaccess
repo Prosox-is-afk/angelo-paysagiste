@@ -1,0 +1,39 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /angelo-paysagiste/
+
+# 1. Empêcher l'accès direct aux dossiers (sécurité)
+Options -Indexes
+
+# 2. Gestion de la page d'accueil (pas de changement nécessaire mais bonne pratique)
+RewriteRule ^index\.php$ / [R=301,L]
+
+# 3. ROUTAGE PERSONNALISÉ (C'est ici que la magie opère)
+# Cela dit au serveur : "Si le gars tape /contact, affiche-lui ce qu'il y a dans /pages/contact.php"
+
+# Page Contact
+RewriteRule ^contact/?$ pages/contact.php [L]
+
+# Page Services
+RewriteRule ^services/?$ pages/services.php [L]
+
+# Page Réalisations
+RewriteRule ^realisations/?$ pages/realisations.php [L]
+
+# Page FAQ
+RewriteRule ^faq/?$ pages/faq.php [L]
+
+# Page Mentions Légales
+RewriteRule ^mentions-legales/?$ pages/mentions.php [L]
+
+# 4. ROUTAGE DES VILLES (SEO LOCAL)
+# On transforme /pages/paysagiste-aubagne.php en /paysagiste-aubagne
+RewriteRule ^paysagiste-aubagne/?$ pages/paysagiste-aubagne.php [L]
+RewriteRule ^paysagiste-aix-en-provence/?$ pages/paysagiste-aix-en-provence.php [L]
+RewriteRule ^paysagiste-cassis/?$ pages/paysagiste-cassis.php [L]
+RewriteRule ^paysagiste-la-ciotat/?$ pages/paysagiste-la-ciotat.php [L]
+RewriteRule ^paysagiste-plan-de-cuques/?$ pages/paysagiste-plan-de-cuques.php [L]
+
+# 5. Forcer le HTTPS (Optionnel si tu es en local, mais obligatoire en ligne)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

@@ -43,7 +43,7 @@ require_once '../config.php'; // On charge la config
                     <li><strong>Propriétaire du site :</strong> Angelo Cavailles</li>
                     <li><strong>Statut :</strong> Entrepreneur individuel (Auto-entrepreneur / EI)</li>
                     <li><strong>Adresse :</strong> 47 Avenue du Maréchal de Lattre de Tassigny, 13009 Marseille</li>
-                    <li><strong>SIRET :</strong> [INSERER TON SIRET ICI]</li>
+                    <li><strong>SIRET :</strong> 989 823 729 000 11</li>
                     <li><strong>Téléphone :</strong> 06 25 15 06 85</li>
                     <li><strong>Email :</strong> angelopaysagistepro@gmail.com</li>
                 </ul>
@@ -52,10 +52,10 @@ require_once '../config.php'; // On charge la config
             <section>
                 <h2 class="text-xl font-bold text-[#4CAF50] mb-3">2. Hébergement</h2>
                 <p>
-                    Le site est hébergé par :<br>
-                    <strong>[NOM DE L'HÉBERGEUR - ex: Hostinger, OVH, O2Switch]</strong><br>
-                    Adresse : [ADRESSE DE L'HÉBERGEUR]<br>
-                    Téléphone : [TEL DE L'HÉBERGEUR]
+                    Le site est hébergé sur un serveur personnel géré par :<br>
+                    <strong>Pierre Burnier</strong><br>
+                    Adresse : 123 Traverse Parangon bat GA<br>
+                    Téléphone : +33 7 81 58 82 55
                 </p>
             </section>
 

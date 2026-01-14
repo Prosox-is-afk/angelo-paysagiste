@@ -17,4 +17,8 @@ $root = "/angelo-paysagiste";
 // ------------------------------------------------------------------
 $siteName = "Angelo Paysagiste";
 $contactEmail = "angelopaysagistepro@gmail.com";
+// --- INFO SENSIBLES (GMAIL) ---
+// On définit des CONSTANTES accessibles partout
+define('SMTP_EMAIL', 'angelopaysagistepro@gmail.com');
+define('SMTP_PASSWORD', 'ton_mot_de_passe_appli_ici');
 ?>
